@@ -1,0 +1,28 @@
+/*
+ * Shared WYSIWYG styling
+ * Lives here because sequential pseudo-selectors like first-child can't be intelligently compiled by Emotion
+*/
+.wysiwyg {
+  h2, h3, h4, h5, h6, p, pre, ul, ol, blockquote {
+    margin-bottom: 0 !important;
+    &:first-child {
+      margin-top: 0 !important;
+    }
+  }
+
+  h2, h3, h4, pre, blockquote {
+    margin-top: $spacer * 2;
+  }
+
+  pre, blockquote {
+    margin-bottom: $spacer * 2;
+  }
+
+  h5, h6, p, ul, ol {
+    margin-top: $spacer;
+  }
+
+  ul, ol {
+    margin-bottom: $spacer;
+  }
+}

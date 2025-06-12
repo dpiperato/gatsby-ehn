@@ -1,0 +1,79 @@
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/carousel";
+
+.jumbotron {
+  p {
+    @extend .lead;
+  }
+}
+
+// Section content
+.section-content {
+  @extend .mb-3;
+  @extend .mb-md-5;
+}
+
+// Section button
+.section-button {
+  @extend .mt-4;
+  text-align: center;
+}
+
+// Video backgrounds
+.video-background {
+  z-index: -1;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+
+  video {
+    height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+    position: absolute;
+    left: 50%; /* % of surrounding element */
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+pre {
+  @extend .lead;
+  font-family: $font-family-base;
+  overflow: inherit;
+  white-space: pre-wrap;
+}
+
+section.bg-light {
+  @extend .py-5;
+  @extend .my-0;
+}
+
+.embed-responsive {
+  iframe {
+    @extend .embed-responsive-item;
+  }
+}
+
+.section-headlines {
+  @extend .mb-5;
+  text-align: center;
+}
+
+.step-subnavigation {
+  a {
+    &:hover, &.active {
+      font-weight: $font-weight-bold;
+    }
+  }
+}

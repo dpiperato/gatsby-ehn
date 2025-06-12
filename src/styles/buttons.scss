@@ -1,0 +1,30 @@
+// Responsive buttons
+//
+// Decrement padding, font size, and radii based on breakpoints
+
+// Change all .btn-lg to .btn size on xs
+@include media-breakpoint-between(xs,sm){
+  .btn-lg {
+    @include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $line-height-base, $btn-border-radius);
+  }
+}
+
+/*
+ * Sprout Custom
+ */
+
+ .btn {
+  text-transform: capitalize;
+  letter-spacing: 0.01rem;
+  font-weight: 500;
+  @extend .rounded-pill;
+}
+
+.btn-primary,
+.btn-success {
+  color: $white !important;
+}
+
+button:focus {
+  outline: none !important;
+}

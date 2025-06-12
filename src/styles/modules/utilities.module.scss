@@ -1,0 +1,8 @@
+@import "~bootstrap/scss/functions";
+@import "../variables";
+
+:export {
+  boxShadow: $box-shadow;
+  spacer: $spacer;
+  transition: $transition-base;
+}

@@ -1,0 +1,23 @@
+// Custom Bootstrap Variables Implementation
+//
+// Abstract commonly used Bootstrap variables for ease of use and
+// implement golden ratio proportions across spacing and typography
+//
+// Full Bootstrap variables file available in /variables/bootstrap-variables.scss
+// for deeper customization
+
+@import "~bootstrap/scss/functions";
+
+@import "variables/rfs";
+@import "variables/colors";
+@import "variables/options";
+@import "variables/spacing";
+@import "variables/grid-columns";
+@import "variables/components";
+@import "variables/typography";
+@import "variables/buttons-forms";
+@import "variables/buttons";
+@import "variables/forms";
+@import "variables/dropdowns";
+
+@import "variables/bootstrap-variables";

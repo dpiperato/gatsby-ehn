@@ -1,0 +1,250 @@
+// Apply Bootstrap nav styling
+/*nav {
+  li {
+    @extend .nav-item;
+
+    a:not(.btn) {
+      @extend .nav-link;
+      padding: 1rem; // To meet Lighthouse minimum accessibility standard
+      
+      &.active {
+        color: $link-hover-color;
+      }
+    }
+  }
+}*/
+
+// Set headers to vertically center
+header, .header-background, .section-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+  min-height: 33vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    padding-top: $spacer * 4;
+    padding-bottom: $spacer * 4;
+
+    h1 {
+      font-size: $display3-size;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    pre {
+      line-height: 1.2;
+    }
+
+    a {
+      @extend .btn;
+      @extend .btn-lg;
+      @extend .btn-success;
+    }
+  }
+}
+
+.header-plain {
+  > div {
+    @extend .container;
+    @extend .py-5;
+    @extend .text-center;
+  }
+
+  h1 {
+    font-size: $display3-size;
+    font-weight: $font-weight-bold;
+  }
+}
+
+.header-blog {
+  @extend .d-flex;
+  @extend .py-6;
+  @extend .text-white;
+
+  box-shadow: inset 0 0 0 3200px rgba(0, 0, 0, 0.36);
+
+  > div {
+    @extend .container;
+    @extend .container-fluid;
+  }
+
+  h1 {
+    font-size: $h1-font-size;
+    width: 75%;
+  }
+
+  @include media-breakpoint-down(md) {
+    h1 {
+      width: 100%;
+    }
+  }
+}
+
+.text-header {
+  .container {
+    h1 {
+      font-size: $display3-size;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    pre {
+      line-height: 1.2;
+    }
+  }
+}
+
+.banner-call {
+  h2 {
+    font-size: $display3-size;
+    font-weight: 700;
+    line-height: 1;
+  }
+}
+
+@include media-breakpoint-between(xs,sm){
+  .jumbotron {
+    .container {
+      h1 {
+        font-size: $display4-size;
+      }
+    }
+  }
+
+  .text-header {
+    .container {
+      h1 {
+        font-size: $display4-size;
+      }
+    }
+  }
+
+  .banner-call {
+    h2 {
+      font-size: $display3-size / 2;
+    }
+  }
+}
+
+.header-background, .section-background {
+  flex: 1;
+  width: 100%;
+}
+
+// Force images responsive
+img {
+  @extend .img-fluid;
+}
+
+// Responsive video backgrounds
+.video-background {
+  z-index: -1;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+
+  video {
+    height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+    position: absolute;
+    left: 50%; /* % of surrounding element */
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.scroll-link {
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+a {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+/*
+ * Sprout Custom
+ */
+
+.bg-primary-light {
+  background-color: rgba($primary, 0.125);
+}
+
+hr {
+  @extend .my-0;
+  @extend .w-50;
+  @extend .mx-auto;
+}
+
+pre {
+  /*@extend .d-block;
+  @extend .p-4;
+  @extend .my-5;
+  @extend .bg-primary-light;*/
+
+  font-family: $font-family-base;
+  font-weight: 300;
+  font-size: $font-size-lg;
+  white-space: normal;
+}
+
+.card {
+  box-shadow: 0 0.75rem 1.75rem -0.375rem $gray-400;
+  height: 100%;
+
+  img {
+    @extend .card-img-top;
+    @extend .d-block;
+  }
+
+  > div {
+    @extend .card-body;
+    @extend .d-flex;
+
+    flex-direction: column;
+
+    h4 {
+      @extend .card-title;
+    }
+
+    p {
+      @extend .card-text;
+
+      /*> a {
+        display: none;
+      }*/
+    }
+
+    a {
+      margin-top: auto;
+    }
+  }
+}
+
+.modal-90w {
+  max-width: 90vw;
+}

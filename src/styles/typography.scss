@@ -1,0 +1,64 @@
+// FOUT Prevention
+//
+// Toggle text visibility after webfonts have loaded
+// Requires gatsby-plugin-web-font-loader to be activated
+
+.wf-active {
+  h1, h2, h3, h4, h5, h6, p, strong, li, a {
+    visibility: visible;
+  }
+}
+
+.wf-loading {
+  h1, h2, h3, h4, h5, h6, p, strong, li, a {
+    visibility: hidden;
+  }
+}
+
+::selection {
+  background-color: $primary;
+  color: $secondary;
+}
+
+
+/*
+ * Sprout Custom
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.01rem;
+}
+
+.text-white {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #ffffff !important;
+  }
+}
+
+p {
+  font-weight: 300;
+  letter-spacing: 0.01rem;
+
+  > span {
+    font-weight: inherit !important;
+  }
+
+  > b {
+    font-weight: 600;
+  }
+}
+
+a {
+  font-weight: 400;
+  letter-spacing: 0.01rem;
+}

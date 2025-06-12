@@ -1,0 +1,9 @@
+form {
+  .form-label {
+    @extend .sr-only;
+  }
+}
+
+:focus {
+  outline: none;
+}

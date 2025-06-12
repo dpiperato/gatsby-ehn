@@ -1,0 +1,36 @@
+@import "~bootstrap/scss/functions";
+@import "../variables";
+
+:export {
+  white: $white;
+  gray100: gray("100");
+  gray200: gray("200");
+  gray300: gray("300");
+  gray400: gray("400");
+  gray500: gray("500");
+  gray600: gray("600");
+  gray700: gray("700");
+  gray800: gray("800");
+  gray900: gray("900");
+  black: $black;
+  blue: color("blue");
+  indigo: color("indigo");
+  purple: color("purple");
+  pink: color("pink");
+  red: color("red");
+  orange: color("orange");
+  yellow: color("yellow");
+  green: color("green");
+  teal: color("teal");
+  cyan: color("cyan");
+  primary: theme-color("primary");
+  secondary: theme-color("secondary");
+  success: theme-color("success");
+  info: theme-color("info");
+  warning: theme-color("warning");
+  danger: theme-color("danger");
+  light: theme-color("light");
+  dark: theme-color("dark");
+  bodyColor: $body-color;
+  linkColor: $link-color;
+}

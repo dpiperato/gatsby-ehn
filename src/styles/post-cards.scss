@@ -1,0 +1,33 @@
+.post-card {
+  @extend .card;
+
+  box-shadow: 0 0.75rem 1.75rem -0.375rem $gray-400;
+
+  img {
+    @extend .card-img-top;
+    @extend .d-block;
+  }
+
+  > div {
+    @extend .card-body;
+    @extend .d-flex;
+
+    flex-direction: column;
+
+    h4 {
+      @extend .card-title;
+    }
+
+    p {
+      @extend .card-text;
+
+      > a {
+        display: none;
+      }
+    }
+
+    a {
+      margin-top: auto;
+    }
+  }
+}

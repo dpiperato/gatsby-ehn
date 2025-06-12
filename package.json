@@ -1,0 +1,64 @@
+{
+  "name": "gatsby-starter-generativ",
+  "private": true,
+  "description": "A simple starter based on gatsby-starter-default",
+  "version": "3.0.0",
+  "author": "Generativ <hello@generativ.io>",
+  "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "@svgr/webpack": "^5.5.0",
+    "bootstrap": "4.5.0",
+    "dotenv": "^10.0.0",
+    "gatsby": "^3.6.0",
+    "gatsby-background-image": "^1.5.3",
+    "gatsby-image": "^3.6.0",
+    "gatsby-plugin-emotion": "^4.4.0",
+    "gatsby-plugin-exclude": "^1.0.2",
+    "gatsby-plugin-force-trailing-slashes": "^1.0.5",
+    "gatsby-plugin-google-tagmanager": "^3.7.1",
+    "gatsby-plugin-manifest": "^3.6.0",
+    "gatsby-plugin-react-helmet": "^5.18.0",
+    "gatsby-plugin-robots-txt": "^1.6.2",
+    "gatsby-plugin-sass": "^4.6.0",
+    "gatsby-plugin-sharp": "^3.6.0",
+    "gatsby-plugin-sitemap": "^4.2.0",
+    "gatsby-plugin-svgr": "^3.0.0-beta.0",
+    "gatsby-source-filesystem": "^3.6.0",
+    "gatsby-source-wordpress": "^5.6.0",
+    "gatsby-transformer-sharp": "^3.6.0",
+    "google-map-react": "^2.1.9",
+    "postscribe": "^2.0.8",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.0",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-scroll": "^1.8.2",
+    "sass": "^1.34.0"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^2.0.2",
+    "prettier": "^2.3.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Generativ/gatsby-starter-generativ"
+  },
+  "bugs": {
+    "url": "https://github.com/Generativ/gatsby-starter-generativ/issues"
+  }
+}
