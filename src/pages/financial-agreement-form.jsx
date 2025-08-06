@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Layout from "../components/layout"; // Adjust path based on your file structure
+import Layout from "../components/layout/layout"; // Adjust path based on your file structure
 
 const FinancialAgreementForm = () => {
   const [iframeSrc, setIframeSrc] = useState(
